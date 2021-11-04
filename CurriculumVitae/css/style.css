@@ -1,0 +1,32 @@
+/***** header *****/
+header{
+  background-color: black;
+  text-align: center;
+}
+
+/***** main *****/
+h1{
+  text-align: center;
+}
+.dt-Negritas{
+  font-weight: bold;
+}
+/* main{
+  background-image:  url('https://fondosmil.com/fondo/7360.jpg');
+  background-size: cover;
+  opacity: 0.1;
+  } */
+main h2{
+  color: white;
+  background-color: black;
+}
+
+/***** footer *****/
+footer span{
+  font-weight: bolder;
+  margin-bottom: 2px;
+}
+footer{
+  text-align: center;
+  background-color: orange;
+}
