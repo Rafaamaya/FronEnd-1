@@ -1,0 +1,38 @@
+/* Header */
+header .header-black{
+  background-color: black;
+  color: white;
+  padding-left: 90px;
+}
+.header-blackText{
+  margin-left: 900px;
+}
+.header-orange{
+  background-color: #F0A83E;
+}
+
+/* Main */
+.main-baner{
+background-image:url(../img/bowl-and-pet-daities-on-green-background.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px;
+text-align: right;
+}
+.main-orange{
+  background-color: #F0A83E;
+}
+
+/* Footer */
+footer{
+  background-color:#3C2313;
+  ;
+}
+.footer-black{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer ul{
+  color: white;
+}

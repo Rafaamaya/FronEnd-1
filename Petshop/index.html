@@ -5,26 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Pet Shop</title>
 </head>
 
 <body>
 
     <header>
-
-        <div>
+        <section class="header-black">
             <span>Grandes ofertas en comederos</span>
-            <nav>
-                <ul>
-                    <li>Español <img src="./img/Vector1.svg" alt="icono"></li>
-                    <li>ARG$ <img src="./img/Vector1.svg" alt="icono"></li>
-                </ul>
-            </nav>
-        </div>
-        <div>
+            <span class="header-blackText">
+                <span>Español <img src="./img/Vector1.svg" alt="icono"></span>
+                <span>ARG$ <img src="./img/Vector1.svg" alt="icono"></span>
+            </span>
+        </section >
+        <section class="header-orange">
             <img src="./img/Logo.svg" alt="Logo">
-        </div>
-        <nav>
+            <nav>
             <ul type="none">
                 <li>
                     <img src="./img/pawprint.svg" alt="">
@@ -43,13 +40,11 @@
                 </li>
             </ul>
         </nav>
+        </section>
     </header>
 
     <main>
-        <div>
-            <img src="./img/bowl-and-pet-daities-on-green-background.png" alt="banner">
-        </div>
-        <div>
+        <div class="main-baner">
             <h1>¡Es un placer tenerte aquí!</h1>
             <h4>¡Comederos en descuento!</h4>
             <a href="#">COMEDEROS</a>
@@ -108,14 +103,15 @@
                 <span><a href="#">Resetear</a></span>
                 <span><a href="#">Enviar</a></span>
             </div>
-            <div>
+            <div class="main-orange">
                 <h4>
                     <img src="./img/Group.svg" alt="icono">
                     Suscríbete para mas novedades
+                    <span>Ingresá tu correo electronico
+                        <a href="#">Suscribirme</a>
+                    </span>
                 </h4>
-                <p>Ingresá tu correo electronico
-                    <a href="#">Suscribirme</a>
-                </p>
+
             </div>
         </section>
     </main>
@@ -126,7 +122,7 @@
                 <li>
                     <img src="./img/Icono1.png" alt="Foto Producto">
                     <br>
-                    <a href="#">Localidad</a>
+                    <span href="#">Localidad</span>
                     <br>
                     Calle - provincia
                 </li>
@@ -134,7 +130,7 @@
                 <li>
                     <img src="./img/Icono2.png" alt="Foto Producto">
                     <br>
-                    <a href="#">Teléfono</a>
+                    <span href="#">Teléfono</span>
                     <br>
                     Número de teléfono
                 </li>
@@ -142,12 +138,13 @@
                 <li>
                     <img src="./img/Icono3.png" alt="Foto Producto">
                     <br>
-                    <a href="#">Correo Electrónico</a><br>Dirección de correo
+                    <span href="#">Correo Electrónico</span>
+                    <br>Dirección de correo
                 </li>
             </ul>
             <img src="./img/Logo2.svg" alt="">
         </div>
-        <div>
+        <div class="footer-black">
             <p>Todos los derechos reservados Front End</p>
         </div>
     </footer>
