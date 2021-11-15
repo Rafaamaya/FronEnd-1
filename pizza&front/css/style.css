@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+header {
+  background-color: #222222;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header div nav ul {
+  color: white;
+  list-style-type: none;
+  display: flex;
+  gap: 13px;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+/* MAIN */
+main{
+  background: #E5E5E5;
+  display: flex;
+  gap: 5px;
+  padding: 35px 19px;
+}
+main article:first-child {
+  width: 490px;
+  height: 350px;
+  background-image: url("../img/delivery.jpg");
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+.rafa{
+  margin: 20px;
+  color: #FC200C;
+}
+.rafa span + span{
+  color: white;
+}
+main article:last-child{
+  width: 490px;
+  height: 350px;
+  background: #FFFFFF;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+main article + article{
+  background-color:tomato;
+}
+
+footer{
+height: 150px;
+
+background: #222222;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
