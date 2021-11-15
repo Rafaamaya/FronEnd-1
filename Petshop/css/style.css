@@ -173,14 +173,16 @@ section.contactos div ul li {
   padding-left: 10px;
   gap: 20px;
 }
-div.buttom{
+
+div.buttom {
   border-radius: 15px;
-  display: flex; 
+  display: flex;
   gap: 50px;
   margin-top: 40px;
   margin-bottom: 75px;
 }
-div.buttom span{
+
+div.buttom span {
   width: 110px;
   height: 34px;
   display: flex;
@@ -191,30 +193,109 @@ div.buttom span{
   color: white;
   font-size: 16px;
 }
-div.buttom span:last-child{
+
+div.buttom span:last-child {
   background: #F0A83E;
 }
-div.buttom span:first-child{
+
+div.buttom span:first-child {
   background: #8A8787;
 }
 
-.main-orange {
+.main-suscripcion {
   background-color: #F0A83E;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 23px;
+  padding-right: 47px;
+}
+
+section.main-suscripcion div:first-child {
+  display: flex;
+  gap: 10px;
+  font-family: Roboto;
+  color: white;
+}
+
+.correo {
+  display: flex;
+  gap: 16px;
+  font-family: Roboto;
+  align-items: center;
+}
+
+.correo span:first-child {
+  width: 271px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  color: #A0A0A0;
+}
+
+.correo span:last-child {
+  width: 70px;
+  height: 34px;
+  background: #3C2313;
+  border-radius: 15px;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  color: white;
 }
 
 /* Footer */
 
-footer {
+footer section {
   background-color: #3C2313;
-  ;
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.informacion {
+  display: flex;
+  gap: 29px;
+  flex-direction: column;
+}
+
+.informacion li {
+  display: flex;
+  gap: 29px
+}
+
+.informacion li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  font-family: Roboto;
+  color: white;
+}
+
+.informacion li div span:first-child {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.informacion li div span:last-child {
+  font-size: 10px;
+  color: #8A8787;
 }
 
 .footer-black {
   background-color: black;
+  font-family: Roboto;
   color: white;
   text-align: center;
-}
-
-footer ul {
-  color: white;
 }
