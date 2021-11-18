@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 /* HEADER */
@@ -17,7 +24,7 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-header div {
+.logo {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -33,12 +40,16 @@ header div nav ul {
 }
 
 /* MAIN */
-main{
+main {
   background: #E5E5E5;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
-  padding: 35px 19px;
+
+  flex: 1
 }
+
 main article:first-child {
   width: 490px;
   height: 350px;
@@ -48,14 +59,18 @@ main article:first-child {
   font-weight: bold;
   font-size: 24px;
 }
-.rafa{
+
+article.firstArticle div {
   margin: 20px;
   color: #FC200C;
 }
-.rafa span + span{
+
+article div span+span {
+  /* selector hermano adyacente  */
   color: white;
 }
-main article:last-child{
+
+main article:last-child {
   width: 490px;
   height: 350px;
   background: #FFFFFF;
@@ -64,13 +79,60 @@ main article:last-child{
   font-weight: bold;
   font-size: 24px;
 }
-main article + article{
-  background-color:tomato;
+
+.secondArticle span {
+  color: #FC200C;
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+  margin-bottom: 56px;
 }
 
-footer{
-height: 150px;
+.secondArticle div {
+  display: flex;
+  justify-content: space-evenly;
 
-background: #222222;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.secondArticle div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondArticle div div h4 {
+  margin-bottom: 20px;
+}
+
+.secondArticle div div ol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: normal;
+}
+
+.secondArticle div img {
+  width: 92px;
+  height: 129px;
+}
+
+/* FOOTER */
+
+footer {
+  height: 150px;
+  background: #222222;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+footer ul {
+  color: white;
+  font-family: Roboto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
