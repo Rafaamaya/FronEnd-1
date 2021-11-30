@@ -128,7 +128,7 @@ main {
   line-height: 1.5;
 }
 
-.pedro {
+.orderList {
   display: flex;
   align-items: flex-start;
   margin-bottom: 33px;
@@ -143,7 +143,7 @@ main {
 .viñeta {
   background-color: var(--primary-color-rojoBrillante);
   border-radius: 50px;
-  padding: 2px 16px;
+  padding: 6px 16px;
   color: var(--primary-color-blanco);
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: bold;
@@ -156,7 +156,7 @@ main {
 }
 
 .text-conteiner span {
-  height: 20px;
+  height: 28px;
   background-color: var(--primary-color-rojoSuave);
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: bold;
@@ -178,17 +178,66 @@ main {
   margin-top: 10px;
 }
 
+.testimonioConteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.testimonioConteiner h2 {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: -0.01em;
+  color: #242E53;
+  margin-bottom: 35px;
+  margin-top: 20px;
+}
 
+.collection {
+  display: flex;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+.collection article {
+  position: relative;
+}
 
+.collection article img {
+  Width: 70px;
+  Height: 70px;
+  position: absolute;
+  left: 42%;
+}
 
+.tuli {
+  background-color: #F5F5F5;
+  margin-top: 33px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.collection article span {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+  color: #3F4868;
+  margin: 56px 0px 21px 0px
+}
 
-
-
-
-
+.collection article p {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  color: #B9B9C1;
+  padding: 14px 26px;
+}
 
 @media screen and (min-width: 376px) {
 
@@ -283,11 +332,7 @@ main {
     margin-top: 36px;
   }
 
-  .div02 {
-    width: 50%;
-  }
-
-  .pedro {
+  .orderList {
     width: 473px;
   }
 
@@ -322,4 +367,25 @@ main {
     margin-top: 0px;
   }
 
+  .testimonioConteiner h2 {
+    font-size: 39px;
+    margin-bottom: 75px;
+    margin-top: 130px;
+  }
+
+
+  .collection {
+    gap: 0px;
+  }
+
+  .tuli {
+    height: 219px;
+  }
+
+  .collection article p {
+    width: 403px;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 0px 26px;
+  }
 }
