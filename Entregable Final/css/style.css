@@ -268,21 +268,37 @@ main {
 
 /********************* FOOTER *********************/
 
+
 .section-brown {
   background-color: var(--primary-color-azulOscuro);
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
-.logo-Redes{
+
+.logo-Redes {
   width: 300px;
-}
-.logo-Redes div {
-  /* background-color: wheat; */
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-Redes img {
+  Width: 120px;
+  Height: 23px;
+}
+
+.logo-Redes div {
+  display: flex;
+  margin: 30px 0px;
+  gap: 40px;
+  order: -1;
+}
+
+.logo-Redes div img {
+  Width: 34px;
+  Height: 34px;
 }
 
 .list {
@@ -293,23 +309,36 @@ main {
 }
 
 .list ul {
-  font-family: 'Be Vietnam Pro', sans-serif;
-  color: var(--primary-color-blanco);
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+.list ul li a {
+  text-decoration-line: none;
+  color: var(--primary-color-blanco);
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
+}
+
+
 .buscador {
+  display: flex;
+  gap: 12px;
   order: -2;
-  margin: 30px 0px
+  margin: 30px 0px;
 }
 
 input {
   border-radius: 50px;
   height: 44px;
   width: 201px;
+  padding-left: 12px;
+  border: none;
+}
+input::placeholder{
+  color: var(--neutral-color-grisClaro);
 }
 
 .go {
@@ -318,15 +347,17 @@ input {
 }
 
 .Copyright {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12.5px;
   line-height: 18px;
   color: #8C8C94;
-  bottom: 53px;
-  right: 165px;
+  background-color: var(--primary-color-azulOscuro);
+  padding: 30px 0px;
+
 }
 
 
@@ -507,63 +538,49 @@ input {
   }
 
   .section-brown {
-    background-color: var(--primary-color-azulOscuro);
     height: 247px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  }
+
+  .logo-Redes {
+    width: 154px;
   }
 
   .logo-Redes div {
     width: 154px;
-    /* background-color: wheat; */
-    display: flex;
     justify-content: space-between;
     margin-top: 67px;
+    gap: 0px;
+    margin: 66px 0px 0px 0px;
+    order: 0;
+  }
+
+  .logo-Redes img {
+    Width: 154px;
+    Height: 29px;
+  }
+
+  .logo-Redes div img {
+    Width: 20px;
+    Height: 20px;
   }
 
   .list {
-    display: flex;
-    justify-content: space-between;
-    width: 392px;
     order: 0;
   }
 
   .list ul {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    color: var(--primary-color-blanco);
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    gap: 12px;
   }
 
   .buscador {
     height: 108px;
     order: 0;
-    margin: 0px;
-  }
-
-  input {
-    border-radius: 50px;
-    height: 44px;
-    width: 201px;
-  }
-
-  .go {
-    width: 63px;
-    height: 38px;
   }
 
   .Copyright {
     position: absolute;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12.5px;
-    line-height: 18px;
-    color: #8C8C94;
     bottom: 53px;
     right: 165px;
+    padding: 0px 0px;
   }
 }
