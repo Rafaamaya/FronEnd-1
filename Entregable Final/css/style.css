@@ -38,12 +38,16 @@ header div {
   justify-content: space-between;
 }
 
+header div img:first-child{
+  width: 32%;
+}
+
 .menu-conteiner {
   display: none;
 }
 
 button {
-  width: 120px;
+  width: 38%;
   height: 40px;
   background: var(--primary-color-rojoBrillante);
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
@@ -205,10 +209,9 @@ main {
 }
 
 .collection article img {
-  Width: 70px;
-  Height: 70px;
+  Width: 23%;
   position: absolute;
-  left: 42%;
+  left: 38%;
 }
 
 .tuli {
@@ -219,7 +222,7 @@ main {
   align-items: center;
 }
 
-.collection article span {
+.tuli span {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: bold;
   line-height: 25px;
@@ -228,7 +231,7 @@ main {
   margin: 56px 0px 21px 0px
 }
 
-.collection article p {
+.tuli p {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 500;
   font-size: 12px;
@@ -268,7 +271,6 @@ main {
 
 /********************* FOOTER *********************/
 
-
 .section-brown {
   background-color: var(--primary-color-azulOscuro);
   display: flex;
@@ -278,15 +280,9 @@ main {
 }
 
 .logo-Redes {
-  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.logo-Redes img {
-  Width: 120px;
-  Height: 23px;
 }
 
 .logo-Redes div {
@@ -297,14 +293,13 @@ main {
 }
 
 .logo-Redes div img {
-  Width: 34px;
-  Height: 34px;
+  Width: 170%;
 }
 
 .list {
   display: flex;
   justify-content: space-around;
-  width: 392px;
+  width: 100%;
   order: -1;
 }
 
@@ -322,7 +317,6 @@ main {
   font-weight: 500;
 }
 
-
 .buscador {
   display: flex;
   gap: 12px;
@@ -337,7 +331,8 @@ input {
   padding-left: 12px;
   border: none;
 }
-input::placeholder{
+
+input::placeholder {
   color: var(--neutral-color-grisClaro);
 }
 
@@ -362,11 +357,6 @@ input::placeholder{
 
 
 
-
-
-
-
-
 @media screen and (min-width: 376px) {
 
   /********************* HEDER *********************/
@@ -376,6 +366,10 @@ input::placeholder{
 
   header div {
     align-items: flex-end;
+  }
+
+  header div img:first-child{
+    width: 12%;
   }
 
   .menu-conteiner {
@@ -411,10 +405,6 @@ input::placeholder{
   button {
     width: 134px;
     height: 44px;
-    background: var(--primary-color-rojoBrillante);
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    border: none;
   }
 
   /****** MAIN ******/
@@ -428,6 +418,7 @@ input::placeholder{
   }
 
   .grafico-conteiner div h1 {
+    width: 80%;
     font-size: 48px;
     font-weight: bold;
     margin-top: 71px;
@@ -449,19 +440,20 @@ input::placeholder{
   }
 
   .frame01 h2 {
-    width: 433px;
+    width: 70%;
     text-align: left;
 
   }
 
   .frame01 p {
-    width: 337px;
+    width: 72%;
     font-size: 16px;
     margin-top: 36px;
+    text-align: left;
+    color: var(--neutral-color-azulMuyOscuro);
   }
-
-  .orderList {
-    width: 473px;
+  .SobreNosotrosConteiner > div:last-child{
+    width: 40%;
   }
 
   .vinetaConteiner {
@@ -506,10 +498,14 @@ input::placeholder{
   }
 
   .tuli {
-    height: 219px;
+    height: 256px;
   }
 
-  .collection article p {
+  .tuli span {
+    margin: 88px 0px 21px 0px
+  }
+
+  .tuli p {
     width: 403px;
     font-size: 14px;
     line-height: 25px;
@@ -530,6 +526,10 @@ input::placeholder{
   /********************* FOOTER *********************/
   footer {
     position: relative;
+  }
+
+  .section-orange {
+    padding-bottom: 0px;
   }
 
   .section-orange button {
@@ -554,11 +554,6 @@ input::placeholder{
     order: 0;
   }
 
-  .logo-Redes img {
-    Width: 154px;
-    Height: 29px;
-  }
-
   .logo-Redes div img {
     Width: 20px;
     Height: 20px;
@@ -566,6 +561,7 @@ input::placeholder{
 
   .list {
     order: 0;
+    width: 28%;
   }
 
   .list ul {
