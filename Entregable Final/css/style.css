@@ -38,7 +38,7 @@ header div {
   justify-content: space-between;
 }
 
-header div img:first-child{
+header div img:first-child {
   width: 32%;
 }
 
@@ -53,6 +53,7 @@ button {
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   border: none;
+  transition: all 1.5s ease 0s;
 }
 
 button a {
@@ -71,6 +72,15 @@ button:hover {
 main {
   margin-left: var(--general-margin-left);
   margin-right: var(--general-margin-right);
+  position: relative;
+}
+
+main>div:first-child {
+  display: none;
+}
+
+.background-img02 {
+  display: none;
 }
 
 .grafico-conteiner {
@@ -214,15 +224,26 @@ main {
   left: 38%;
 }
 
-.tuli {
+article img{
+  border: white solid 4px;
+  border-radius: 50px;
+}
+
+.art-info {
   background-color: #F5F5F5;
-  margin-top: 33px;
+  margin-top: 44px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 1s ease 0s;
+  color: #B9B9C1;
+}
+.art-info:hover{
+  background-color: var(--primary-color-rojoBrillante);
+  color:white;
 }
 
-.tuli span {
+.art-info span {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: bold;
   line-height: 25px;
@@ -231,15 +252,15 @@ main {
   margin: 56px 0px 21px 0px
 }
 
-.tuli p {
+.art-info p {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 22px;
   text-align: center;
-  color: #B9B9C1;
   padding: 14px 26px;
 }
+
 
 .section-orange {
   background-color: var(--primary-color-rojoBrillante);
@@ -286,10 +307,18 @@ main {
 }
 
 .logo-Redes div {
+  width: 274px;
   display: flex;
   margin: 30px 0px;
-  gap: 40px;
+  justify-content: space-between;
   order: -1;
+}
+
+.fa-brands, .fab {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  font-size: 38px;
+  color: white;
 }
 
 .logo-Redes div img {
@@ -368,7 +397,7 @@ input::placeholder {
     align-items: flex-end;
   }
 
-  header div img:first-child{
+  header div img:first-child {
     width: 12%;
   }
 
@@ -407,7 +436,32 @@ input::placeholder {
     height: 44px;
   }
 
-  /****** MAIN ******/
+  /********************* MAIN *********************/
+
+  main>div:first-child {
+    display: block;
+    background-image: url("../img/bg-tablet-pattern.svg");
+    height: 875px;
+    width: 640px;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    right: -117px;
+    top: -432px;
+  }
+
+  .background-img02 {
+    display: block;
+    background-image: url("../img/bg-tablet-pattern.svg");
+    height: 875px;
+    width: 875px;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    left: -610px;
+    top: 1026px;
+  }
+
   .grafico-conteiner img {
     width: 50%;
   }
@@ -452,7 +506,8 @@ input::placeholder {
     text-align: left;
     color: var(--neutral-color-azulMuyOscuro);
   }
-  .SobreNosotrosConteiner > div:last-child{
+
+  .SobreNosotrosConteiner>div:last-child {
     width: 40%;
   }
 
@@ -494,19 +549,19 @@ input::placeholder {
   }
 
   .collection {
-    gap: 0px;
+    gap: 4px;
   }
 
-  .tuli {
+  .art-info {
     height: 256px;
   }
 
-  .tuli span {
+  .art-info span {
     margin: 88px 0px 21px 0px
   }
 
-  .tuli p {
-    width: 403px;
+  .art-info p {
+    width: 390px;
     font-size: 14px;
     line-height: 25px;
     padding: 0px 26px;
@@ -547,16 +602,12 @@ input::placeholder {
 
   .logo-Redes div {
     width: 154px;
-    justify-content: space-between;
-    margin-top: 67px;
-    gap: 0px;
     margin: 66px 0px 0px 0px;
     order: 0;
   }
 
-  .logo-Redes div img {
-    Width: 20px;
-    Height: 20px;
+  .fa-brands, .fab {
+    font-size: 22px;
   }
 
   .list {
@@ -576,7 +627,7 @@ input::placeholder {
   .Copyright {
     position: absolute;
     bottom: 53px;
-    right: 165px;
+    right: 154px;
     padding: 0px 0px;
   }
 }
