@@ -261,7 +261,6 @@ article img{
   padding: 14px 26px;
 }
 
-
 .section-orange {
   background-color: var(--primary-color-rojoBrillante);
   margin-top: 120px;
@@ -314,7 +313,7 @@ article img{
   order: -1;
 }
 
-.fa-brands, .fab {
+.fab {
   font-family: "Font Awesome 6 Brands";
   font-weight: 400;
   font-size: 38px;
@@ -337,6 +336,18 @@ article img{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.fas{
+  color: var(--primary-color-azulOscuro);
+}
+
+.fas:hover{
+  color:azure;
+}
+
+.fa-dollar-sign:before {
+  margin-left: 8px;
 }
 
 .list ul li a {
